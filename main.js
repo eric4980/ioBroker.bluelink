@@ -5,7 +5,7 @@ const bluelinky = require('bluelinky');
 const Json2iob = require('./lib/json2iob');
 
 const adapterIntervals = {}; //halten von allen Intervallen
-let request_count = 48; // halbstündig sollte als Standardeinstellung reichen (zu häufige Abfragen entleeren die Batterie spürbar)
+let request_count = 0; // halbstündig sollte als Standardeinstellung reichen (zu häufige Abfragen entleeren die Batterie spürbar)
 const max_request = 400;
 let client;
 const positionUrlConst = 'https://maps.google.com/maps?z=15&t=m&q=loc:';
